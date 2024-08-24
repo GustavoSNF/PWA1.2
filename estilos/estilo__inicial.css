@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+    /* Importação das fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.cookie-regular {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.raleway-uniquifier {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+  .quicksand-uniquifier {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+  /* Declaração das Variáveis */
+
+:root{
+    --cor-principal: #fbc30c;
+    --cinza--escuro: #4A4A4A;
+    --cor--secundaria: #E6E2CF;
+    --marrom: #8B5E3C;
+    --fonte--frase--efeito: "Cookie";
+    --fonte--padrao: "Raleway";
+    --font--titulos: "Quicksand";
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+    /* Formatação do Cabeçalho */
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor--secundaria) 95%, white);
+}
+
+.container{
+    display: flex;
+}
+
+.cabecalho{
+    justify-content: space-between;
+    padding: 2.5em;
+    align-items: center;
+    font-family: var(--fonte--padrao);
+}
+
+.logo__meato{
+    padding-left: 2em;
+    border-radius: 50%;
+}
+
+#cabecalho__campo__pesquisa{
+    width: 250%;
+    padding: 1em;
+    border-radius: 5px;
+    font-family: var(--fonte--padrao);
+}
+
+.cabecalho__lista{
+    padding-left: 20em;
+    gap: 4em;
+}
+
+.cabecalho__lista__links{
+    text-decoration: none;
+    padding:1em;
+    border-radius: 2em;
+}
+
+    /*Formação das Seções*/
+
+.secao__conteudo__padrao{
+    text-align: center;
+    padding: 5em;
+}
+
+.titulos__secundarios{
+    font-family: var(--font--titulos);
+    font-size: 2.5em;
+}
+
+.lista__conteudo__padrao{
+    padding: 5em    ;
+    justify-content: center;
+    gap:10em;
+}
+
+.lista__populares li{
+    padding: 1em;
+    border: 2px solid rgba(0, 0, 0, 0.356);
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.507);
+}
+
+.lista__populares li:hover{
+    background-color: var(--cor-principal);
+}
+
+.container__lista{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.passo__passo__cards{
+    /* Por algum motivo o padding normal não está pegando */
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-family: var(--fonte--padrao);
+    box-sizing: border-box;
+    background-color: #ffcb21c2;
+}
+
+.passo__passo__cards:hover{
+    background-color: var(--cor-principal);
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.685);
+}
+
+.titulos__principal{
+    padding-bottom: 2em;
+}
+
+
+.conteudo__slogan{
+    font-size: 2em;
+    font-family: var(--fonte--frase--efeito);
+    text-align: center;
+    padding: 2em;
+
+}
+
+.conteudo__slogan__apresentacaoAPP{
+    width: 70%;
+    margin: auto;
+    gap: 2em;
+    align-items: center;
+}
+
+.video{
+    border-radius: 1em;
+    width: 560px; 
+    height: 315px;
+    border:0;
+}
+
+/* Formatação do Rodapé */
+
+footer{
+    background-color: var(--cinza--escuro);
+}
+
+.rodape{
+    width: 70%;
+    margin: auto;
+    padding: 5em;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 30px;
+    font-family: var(--fonte--padrao);
+    gap: 2em;
+}
+
+.links__contatos{
+    text-decoration: none;
+    color: white;
+}
+
+.links__contatos:hover{
+    color: var(--cor-principal);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.384);
+}   
+
+.tabela, th,td{
+    color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+}

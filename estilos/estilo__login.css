@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@import url(estilo__inicial.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--cor-principal) ;
+    width: 100vw;
+}
+
+.container{
+    display:flex;
+    font-family: var(--fonte--padrao);
+    width: 70%;
+    margin: auto;
+    padding: 5% 9%;
+}
+
+.login{
+    border: 1px solid black;
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.login h2{
+    padding: 0.5em;
+}
+
+.login__usuario{
+    border-radius: 15px 0 0 15px;
+    padding: 1em 2em;
+}
+
+.login__novo{
+    border-radius: 0 15px 15px 0;
+    padding: 1em 2em;
+    line-height: 10px;
+    gap: 10px;
+}
+
+.secao__login input{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
+    padding: 5px;
+}
+
+.container__especial{
+    display: flex;
+    flex-direction: column;
+}
+
+#botao__chato__queNaoAlinha{
+    padding: 1em;
+}
+
+/* Não consigo alinhar esses icones. */ 
+
+#voltar{
+    padding-left: 1em
+}

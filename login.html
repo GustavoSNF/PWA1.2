@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="img/logo1_pq.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilo__login.css">
+</head>
+<body>
+    <a href="index.html"><img src="img/img__voltar__pq.png" id="voltar" alt="Icone voltar"></a>
+    <div class="container">
+        <div class="login__usuario login">
+            <h2>Login</h2>
+            <form class="login__usuario container__especial ">
+                <p class="secao__login">
+                    <input type="text" id="nome__usuario" placeholder="Usuário" required>
+                    <label for="nome__usuario"><img src="./img/img__login__pq.png" alt="Usuário" class="icones"></label>
+                    
+                </p>
+                <p class="secao__login">
+                    <input type="password" id="senha__usuario" placeholder="Senha" required>
+                    <label for="senha__usuario"><img src="img/img__senha__pq.png" alt="Senha" class="icones"></label>
+                    
+                </p>
+                <p class="secao__login" id="botao__chato__queNaoAlinha">
+                    <input type="submit" value="Entrar">
+                </p>
+            </form>
+        </div>
+        <div class="login__novo login">
+            <h2>Cadastre-se</h2>
+            <form class="login__novo container__especial">
+                <p class="secao__login">
+                    <input type="text" id="nome__usuario__novo" placeholder="Insira seu nome" required>
+                </p>
+                <p class="secao__login">
+                    <input type="email" id="email__usuario" placeholder="Insira seu email" required>
+                </p>
+                <p class="secao__login">
+                    <input type="password" id="senha__usuario__novo" placeholder="Crie uma senha" required>
+                </p>
+                <p class="secao__login">
+                    <input type="password" id="confirmacao__senha" placeholder="Confirme a senha" required>
+                </p>
+                <p class="secao__login">
+                    <input type="submit" value="Cadastrar">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
