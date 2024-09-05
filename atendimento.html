@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Atendimento</title>
+    <link rel="stylesheet" href="estilos/atendimento.css">
+</head>
+<body>
+    <main class="conteudo__voltar">
+        <a href="index.html"><img src="img/img__voltar__pq.png" alt="icone de voltar"></a>
+
+        <section class="conteudo__formulario">
+            <h1>Fale conosco</h1>
+            <form action="bancoDados">
+
+                <div class="dadosUsuario">
+                    <p>
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required>
+                    </p>
+
+                    <p>
+                        <label for="telf">Telefone</label>
+                        <input type="tel" id="telf" placeholder="(xx) xxxxx-xxxx" required>
+                    </p>
+                </div>
+
+                <div class="motivoAtendimento">
+                    <p>
+                        <label for="assunto">Assunto: </label>
+                        <select id="assunto">
+                            <option value="1">Dúvida</option>
+                            <option value="2">Reclamação</option>
+                            <option value="3" selected>Elogio</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <textarea id="comentario" cols="30" rows="10" placeholder="Deixe um comentário!"></textarea>
+                    </p>
+                </div>
+
+                <div class="nps">
+                    <p>Nivel de satisfação com o app:</p>
+                    <input type="range" id="nivelSatisfacao" max="5">
+
+                    <p>Indicaria o app ?</p>
+                    <input type="radio" name="escolha" id="0"> <label for="0"> Nem para o inimigo </label>
+
+                    <input type="radio" name="escolha" id="1"> <label for="1"> Provavelmente </label>
+
+                    <input type="radio" name="escolha" id="2"> <label for="2"> Super Indicaria </label>
+
+                    <input type="radio" name="escolha" id="3" checked> <label for="3"> Testemunha de Jeóva </label>
+                </div>
+
+                <div class="meioContato">
+                    <p>Como deseja que entremos em contato?</p>
+                    <input type="checkbox" id="whats"> <label for="whats">Whatsapp </label>
+
+                    <input type="checkbox" id="ligacao"> <label for="ligacao">Ligação </label>
+
+                    <input type="checkbox" id="emailcont"> <label for="emailcont">E-mail </label>
+
+                    <input type="checkbox" id="carta"> <label for="carta"> Carta </label>
+                </div>
+                
+                <div class="botoes">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
